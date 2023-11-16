@@ -1,0 +1,11 @@
+{
+  "appName": "workflows",
+  "userGivenName": "workflows",
+  "destNamespace": "default",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/workflows/overlays/testing",
+  "srcRepoURL": "https://github.com/zhongyiio/argocd.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
