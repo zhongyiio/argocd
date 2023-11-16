@@ -84,4 +84,6 @@ spec:
         path: '{{ srcPath }}'
         repoURL: '{{ srcRepoURL }}'
         targetRevision: '{{ srcTargetRevision }}'
+        kustomize:
+          images: []
 status: {}
