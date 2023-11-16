@@ -19,8 +19,6 @@ spec:
         spec:
           destination: {}
           project: ""
-  syncPolicy:
-    preserveResourcesOnDeletion: true
   template:
     metadata:
       labels:
@@ -40,8 +38,4 @@ spec:
       source:
         path: bootstrap/cluster-resources/{{name}}
         repoURL: https://github.com/zhongyiio/argocd.git
-      syncPolicy:
-        automated:
-          allowEmpty: true
-          selfHeal: true
 status: {}

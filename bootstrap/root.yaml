@@ -22,13 +22,6 @@ spec:
   source:
     path: projects
     repoURL: https://github.com/zhongyiio/argocd.git
-  syncPolicy:
-    automated:
-      allowEmpty: true
-      prune: true
-      selfHeal: true
-    syncOptions:
-    - allowEmpty=true
 status:
   health: {}
   summary: {}
