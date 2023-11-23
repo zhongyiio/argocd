@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: nacos-hs
   namespace: nacos
-  annotations:
-    service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
 spec:
   clusterIP: None
+  publishNotReadyAddresses: true
   ports:
     - port: 8848
       targetPort: 8848
