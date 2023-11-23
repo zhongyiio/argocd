@@ -1,7 +1,7 @@
 {
   "appName": "nacos",
   "userGivenName": "nacos",
-  "destNamespace": "testing",
+  "destNamespace": "nacos",
   "destServer": "https://kubernetes.default.svc",
   "srcPath": "apps/nacos/overlays/testing",
   "srcRepoURL": "https://github.com/zhongyiio/argocd.git",
