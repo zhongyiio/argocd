@@ -31,10 +31,10 @@ spec:
       - name: peer-finder-plugin-install
         image: nacos/nacos-peer-finder-plugin:1.1
         imagePullPolicy: IfNotPresent
-#        volumeMounts:
-#        - mountPath: /home/nacos/plugins/peer-finder
-#          name: data
-#          subPath: peer-finder
+        volumeMounts:
+        - mountPath: /home/nacos/plugins/peer-finder
+          name: data
+          subPath: peer-finder
       containers:
       - name: nacos
         image: "nacos/nacos-server:v2.2.3"
@@ -100,16 +100,19 @@ spec:
           value: "8848"
         - name: PREFER_HOST_MODE
           value: "hostname"
-#        volumeMounts:
-#        - name: data
-#          mountPath: /home/nacos/plugins/peer-finder
-#          subPath: peer-finder
-#        - name: data
-#          mountPath: /home/nacos/data
-#          subPath: data
-#        - name: data
-#          mountPath: /home/nacos/logs
-#          subPath: logs
+        volumeMounts:
+        - name: data
+          mountPath: /home/nacos/plugins/peer-finder
+          subPath: peer-finder
+        - name: data
+          mountPath: /home/nacos/data
+          subPath: data
+        - name: data
+          mountPath: /home/nacos/logs
+          subPath: logs
+      volumes:
+        - name: data
+          emptyDir: {}
 #  volumeClaimTemplates:
 #  - metadata:
 #      name: data
