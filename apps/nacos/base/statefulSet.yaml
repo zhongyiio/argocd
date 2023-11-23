@@ -57,7 +57,7 @@ spec:
         - name: NACOS_REPLICAS
           value: "3"
         - name: SERVICE_NAME
-          value: "nacos-headless"
+          value: "nacos-hs"
         - name: DOMAIN_NAME
           value: "cluster.local"
         - name: POD_NAMESPACE
