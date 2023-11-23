@@ -8,3 +8,8 @@ patches:
       kind: StatefulSet
       name: nacos
       namespace: nacos
+  - path: cm.yaml
+    target:
+      kind: ConfigMap
+      name: nacos
+      namespace: nacos
