@@ -90,6 +90,8 @@ spec:
             configMapKeyRef:
               name: nacos-cm
               key: mysql.password
+        - name: MYSQL_SERVICE_DB_PARAM
+          value: "characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai"
         - name: SPRING_DATASOURCE_PLATFORM
           value: "mysql"
         - name: NACOS_SERVER_PORT
