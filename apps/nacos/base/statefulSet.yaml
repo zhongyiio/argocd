@@ -37,7 +37,7 @@ spec:
           subPath: peer-finder
       containers:
       - name: nacos
-        image: "nacos/nacos-server:2.2.3"
+        image: "nacos/nacos-server:v2.2.3"
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
