@@ -11,11 +11,11 @@ spec:
   selector:
     matchLabels:
       app: nacos
-  volumeClaimTemplates:
-    - metadata:
-        name: data
-      spec:
-        accessModes: [ "ReadWriteOnce" ]
-        resources:
-          requests:
-            storage: 5Gi
+#  volumeClaimTemplates:
+#    - metadata:
+#        name: data
+#      spec:
+#        accessModes: [ "ReadWriteOnce" ]
+#        resources:
+#          requests:
+#            storage: 5Gi
