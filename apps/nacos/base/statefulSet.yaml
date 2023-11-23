@@ -7,7 +7,7 @@ metadata:
     app: nacos
 spec:
   serviceName: nacos-hs
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: nacos
@@ -55,7 +55,7 @@ spec:
             memory: 2Gi
         env:
         - name: NACOS_REPLICAS
-          value: "3"
+          value: "2"
         - name: SERVICE_NAME
           value: "nacos-hs"
         - name: DOMAIN_NAME
