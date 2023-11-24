@@ -3,8 +3,4 @@ kind: Kustomization
 namespace: nacos
 resources:
   - ../../base
-patches:
-  - path: cm.yaml
-    target:
-      kind: ConfigMap
-      name: nacos-cm
+  - cm.yaml
