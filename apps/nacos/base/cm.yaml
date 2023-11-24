@@ -3,8 +3,8 @@ kind: ConfigMap
 metadata:
   name: nacos-cm
 data:
-  mysql.host: "10.255.12.190"
+  mysql.host: "mysql"
   mysql.db.name: "nacos"
-  mysql.port: "3307"
-  mysql.user: "root"
-  mysql.password: "root"
+  mysql.port: "3306"
+  mysql.user: "user"
+  mysql.password: "pass"
