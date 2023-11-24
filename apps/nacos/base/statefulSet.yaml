@@ -91,7 +91,7 @@ spec:
               name: nacos-cm
               key: mysql.password
         - name: MYSQL_SERVICE_DB_PARAM
-          value: "characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai"
+          value: "characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=Asia/Singapore"
         - name: SPRING_DATASOURCE_PLATFORM
           value: "mysql"
         - name: NACOS_SERVER_PORT
@@ -108,8 +108,8 @@ spec:
           value: "nacos"
         - name: NACOS_AUTH_IDENTITY_VALUE
           value: "nacos"
-        - name: NACOS_AUTH_TOKEN
-          value: "RXQgcXVpYSBpcHN1bSByZWN1c2FuZGFlIHZlcml0YXRpcyBudWxsYSBldCBxdW8gaXBzdW0u"
+#        - name: NACOS_AUTH_TOKEN
+#          value: "RXQgcXVpYSBpcHN1bSByZWN1c2FuZGFlIHZlcml0YXRpcyBudWxsYSBldCBxdW8gaXBzdW0u"
         volumeMounts:
         - name: data
           mountPath: /home/nacos/plugins/peer-finder
