@@ -104,6 +104,10 @@ spec:
           value: "true"
         - name: NACOS_AUTH_SYSTEM_TYPE
           value: "nacos"
+        - name: NACOS_AUTH_IDENTITY_KEY
+          value: "nacos"
+        - name: NACOS_AUTH_IDENTITY_VALUE
+          value: "nacos"
         volumeMounts:
         - name: data
           mountPath: /home/nacos/plugins/peer-finder
