@@ -100,8 +100,6 @@ spec:
           value: "8848"
         - name: PREFER_HOST_MODE
           value: "hostname"
-        - name: NACOS_AUTH_ENABLE
-          value: "true"
         volumeMounts:
         - name: data
           mountPath: /home/nacos/plugins/peer-finder
