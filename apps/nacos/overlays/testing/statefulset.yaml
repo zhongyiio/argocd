@@ -17,16 +17,16 @@ spec:
         app: nacos
     spec:
       # Prevents pods labeled app=nacos from co-locating on one node.
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: "app"
-                    operator: In
-                    values:
-                      - nacos
-              topologyKey: "kubernetes.io/hostname"
+#      affinity:
+#        podAntiAffinity:
+#          requiredDuringSchedulingIgnoredDuringExecution:
+#            - labelSelector:
+#                matchExpressions:
+#                  - key: "app"
+#                    operator: In
+#                    values:
+#                      - nacos
+#              topologyKey: "kubernetes.io/hostname"
       containers:
       - name: nacos
         env:
