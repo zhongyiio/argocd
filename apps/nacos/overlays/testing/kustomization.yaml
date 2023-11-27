@@ -4,3 +4,8 @@ namespace: nacos
 resources:
   - ../../base
   - cm.yaml
+patches:
+  - path: statefulset.yaml
+    target:
+      kind: StatefulSet
+      name: nacos

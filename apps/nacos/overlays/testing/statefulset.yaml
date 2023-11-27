@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: nacos
+  namespace: nacos
+  labels:
+    app: nacos
+spec:
+  serviceName: nacos-hs
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nacos
+  template:
+    metadata:
+      labels:
+        app: nacos
+    spec:
+      # Prevents pods labeled app=nacos from co-locating on one node.
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "app"
+                    operator: In
+                    values:
+                      - nacos
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: nacos
+        env:
+        - name: NACOS_AUTH_ENABLE
+          value: "true"
+        - name: NACOS_AUTH_SYSTEM_TYPE
+          value: "nacos"
+        - name: NACOS_AUTH_IDENTITY_KEY
+          value: "user"
+        - name: NACOS_AUTH_IDENTITY_VALUE
+          value: "pass"
+        - name: NACOS_AUTH_TOKEN
+          value: "RXQgcXVpYSBpcHN1bSByZWN1c2FuZGFlIHZlcml0YXRpcyBudWxsYSBldCBxdW8gaXBzdW0u"
+
