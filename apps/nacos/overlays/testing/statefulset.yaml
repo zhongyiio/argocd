@@ -35,9 +35,9 @@ spec:
         - name: NACOS_AUTH_SYSTEM_TYPE
           value: "nacos"
         - name: NACOS_AUTH_IDENTITY_KEY
-          value: "user"
+          value: "RXQgcXVpYSBpcHN1bSByZWN1c2FuZGFlIHZl"
         - name: NACOS_AUTH_IDENTITY_VALUE
-          value: "pass"
+          value: "ml0YXRpcyBudWxsYSBldCBxdW8gaXBzdW0u1"
         - name: NACOS_AUTH_TOKEN
           value: "RXQgcXVpYSBpcHN1bSByZWN1c2FuZGFlIHZlcml0YXRpcyBudWxsYSBldCBxdW8gaXBzdW0u"
 
