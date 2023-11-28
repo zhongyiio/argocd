@@ -40,4 +40,14 @@ spec:
           value: "ml0YXRpcyBudWxsYSBldCBxdW8gaXBzdW0u1"
         - name: NACOS_AUTH_TOKEN
           value: "RXQgcXVpYSBpcHN1bSByZWN1c2FuZGFlIHZlcml0YXRpcyBudWxsYSBldCBxdW8gaXBzdW0u"
-
+        volumeMounts:
+          - name: config
+            mountPath: /home/nacos/config/application.properties
+            subPath: application.properties
+      volumes:
+        - name: config
+          configMap:
+            name: nacos-cm
+            items:
+              - key: application.properties
+                path: application.properties
