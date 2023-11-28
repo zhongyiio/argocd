@@ -34,10 +34,10 @@ spec:
           value: "true"
         - name: NACOS_AUTH_SYSTEM_TYPE
           value: "nacos"
-#        - name: NACOS_AUTH_IDENTITY_KEY
-#          value: "user"
-#        - name: NACOS_AUTH_IDENTITY_VALUE
-#          value: "pass"
+        - name: NACOS_AUTH_IDENTITY_KEY
+          value: "user"
+        - name: NACOS_AUTH_IDENTITY_VALUE
+          value: "pass"
         - name: NACOS_AUTH_TOKEN
           value: "RXQgcXVpYSBpcHN1bSByZWN1c2FuZGFlIHZlcml0YXRpcyBudWxsYSBldCBxdW8gaXBzdW0u"
 
